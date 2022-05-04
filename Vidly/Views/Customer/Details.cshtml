@@ -1,0 +1,26 @@
+﻿@model Vidly.ViewModels.CustomerViewModel
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@foreach (var customer in Model.Customets)
+{
+    if (customer.Id == 1)
+    {
+        <h2>Hello, @customer.Name</h2>
+        break;
+    }
+    else if (customer.Id == 2)
+    {
+        <h2>Hello, @customer.Name</h2>
+        break;
+    }
+    else
+    {
+        <h2>Hello, @customer.Name</h2>
+        break;
+    }
+}
+
+

@@ -1,0 +1,11 @@
+﻿@model Vidly.ViewModels.CustomerViewModel
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@foreach (var customer in Model.Customets)
+{
+    <a href="/Customer/Details/@customer.Id">@customer.Name</a>
+}
+
